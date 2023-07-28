@@ -44,7 +44,8 @@ td, th {
 }
 
 body {
-  background: black;
+  border: 1px solid red;
+  margin: 45px 100px 0 100px;
 }
 
 p {
