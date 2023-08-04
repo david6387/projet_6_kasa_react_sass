@@ -1,3 +1,3 @@
 export default function AccomodationInfo() {
-  return <div className="accomodationInfo"></div>;
+  return <div className="accomodation-info"></div>;
 }
