@@ -1,17 +1,16 @@
-import Footer from "./components/footer.js";
-import Gallery from "./components/gallery.js";
-import Menu from "./components/menu.js";
+import Footer from "./components/Footer.js";
+import Menu from "./components/Menu.js";
 import Home from "./pages/home.js";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./styles/app.css";
 
 function App() {
   return (
-    <>
-      <Menu />
-      <Home />
-      <Gallery />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
