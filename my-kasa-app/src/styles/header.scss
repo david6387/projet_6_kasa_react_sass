@@ -1,0 +1,16 @@
+.menu {
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 100px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: #FF6060;
+    gap: 50px;
+}

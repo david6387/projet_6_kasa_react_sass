@@ -1,8 +1,6 @@
-import Footer from "./components/Footer.js";
-import Menu from "./components/Menu.js";
 import Home from "./pages/home.js";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./styles/app.css";
+import "./styles/app.scss";
 
 function App() {
   return (
