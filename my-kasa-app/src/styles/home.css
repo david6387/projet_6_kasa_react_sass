@@ -1,5 +1,6 @@
 .home {
-    background: grey;
+    background-image: 
+    url("https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/image-source.png");
     padding: 20px;
     display: flex;
     justify-content: center;
