@@ -6,10 +6,9 @@
     display: flex;
     justify-content: center;
     padding: 80px 0 80px 0;
-    background-image: 
-    url("https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/mer.png");
+    background: url("https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/mer.png"), lightgray 50% / cover no-repeat;
     background-size: cover;
-    background-position: 50%;
+    background-position: 60%;
     border-radius: 25px;
     /* opacity: 0.3; */
     font-size: 48px;
