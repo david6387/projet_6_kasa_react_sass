@@ -3,4 +3,14 @@
     flex-direction: column;
     background: black;
     color: white;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.footer picture {
+    margin-top: 65px;
+}
+
+.footer div {
+    margin-bottom: 30px;
 }
