@@ -1,6 +1,4 @@
-import Header from "../components/Header";
 import Banner from "../components/Banner";
-import Footer from "../components/Footer";
 
 export default function Home() {
   // les states et les variables
@@ -10,10 +8,8 @@ export default function Home() {
   // render = rendu
   return (
     <>
-      <Header />
       <Banner />
       <div className="home-gallery"></div>
-      <Footer />
     </>
   );
 }

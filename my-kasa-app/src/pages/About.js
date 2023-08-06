@@ -1,12 +1,10 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Banner from "../components/Banner";
 
 export default function About() {
   return (
     <>
-      <Header />
+      <Banner />
       <div className="about"></div>
-      <Footer />
     </>
   );
 }
