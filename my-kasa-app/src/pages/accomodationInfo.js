@@ -5,7 +5,7 @@ export default function AccomodationInfo() {
   return (
     <>
       <Header />
-      <div className="accomodation-info"></div>;
+      <div className="accomodation-info"></div>
       <Footer />
     </>
   );

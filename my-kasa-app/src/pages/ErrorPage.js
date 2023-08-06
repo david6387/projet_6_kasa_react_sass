@@ -5,7 +5,7 @@ export default function ErrorPage() {
   return (
     <>
       <Header />
-      <div className="error-page"></div>;
+      <div className="error-page"></div>
       <Footer />
     </>
   );
