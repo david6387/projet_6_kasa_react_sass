@@ -1,6 +1,6 @@
+import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
 
 export default function Home() {
   // les states et les variables
@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Header />
       <Banner />
-      <div className=""></div>
+      <div className="home-gallery"></div>
       <Footer />
     </>
   );
