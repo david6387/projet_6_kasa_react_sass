@@ -1,12 +1,12 @@
 .banner {
-    // margin: 50px 100px;
+    margin: 50px 100px;
     h1 {
         display: flex;
         justify-content: center;
         padding: 80px 0 80px 0;
         background: url("https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/mer.png"), lightgray 50% / cover no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: auto;
         border-radius: 25px;
         /* opacity: 0.3; */
         font-size: 48px;
