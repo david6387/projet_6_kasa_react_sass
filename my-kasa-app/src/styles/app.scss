@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-@import './variables.scss';
+@import './variables-fonts.scss';
 @import './header.scss';
 @import './banner.scss';
 @import './footer.scss';
@@ -7,7 +7,7 @@
 @import './error.scss';
 
 body {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: auto;
     max-width: 1440px;
     }
