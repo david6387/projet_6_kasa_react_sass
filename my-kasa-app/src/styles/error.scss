@@ -1,0 +1,21 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat";
+    text-align: center;
+    color: $red;
+    margin: 139px auto;
+    gap: 139px;
+    :first-child{
+        font-size: 288px;
+        }
+    :last-child{
+        font-size: 18px;
+        a {
+            color: $red;
+        }
+    }
+    .middle {
+        font-size: 36px;
+    }
+}

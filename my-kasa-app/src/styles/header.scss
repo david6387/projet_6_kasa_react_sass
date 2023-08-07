@@ -5,17 +5,17 @@
     align-items: center;
     justify-content: space-between;
     margin: 50px 100px;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    } a {
+        text-decoration: none;
+        color: $red;
+    }
+    .activeLink {
+        text-decoration: underline;
+    }
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-} a {
-    text-decoration: none;
-    color: $red;
-}
-.activeLink {
-    text-decoration: underline;
-}
