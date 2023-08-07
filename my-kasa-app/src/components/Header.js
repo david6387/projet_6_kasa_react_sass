@@ -11,10 +11,20 @@ export default function Header() {
       </picture>
       <ul>
         <li>
-          <NavLink to="/">Accueil</NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "activeLink" : undefined)}
+          >
+            Accueil
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/about">A Propos</NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "activeLink" : undefined)}
+          >
+            A Propos
+          </NavLink>
         </li>
       </ul>
     </div>
