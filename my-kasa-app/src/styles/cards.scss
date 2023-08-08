@@ -1,18 +1,43 @@
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, 340px);
-    background-color: #F6F6F6;
+    grid-template-rows: repeat(7, auto);
+    background-color: #f6f6f6;
     border-radius: 25px;
     margin: auto 100px;
     padding: 55px 50px 45px 50px;
     column-gap: 60px;
     row-gap: 50px;
-    div {
-        // width: 30%;
-        // background: $red;
-        border-radius: 10px;
+    .card {
         display: flex;
         flex-direction: column;
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            opacity: 1; 
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+            border-radius: 10px;
+            figcaption {
+                    text-align: center;
+                    padding: 20px;
+                    color: white; 
+                }
+            }
+        }
     }
 }
