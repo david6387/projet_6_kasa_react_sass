@@ -1,50 +1,18 @@
+import Logements from "./logements.json";
+// console.log();
+
 export default function Cards() {
   return (
     <div className="cards">
-      <div>
-        <picture></picture>
-        <p>haha</p>
-      </div>
-      <div>
-        <picture></picture>
-        <p>haha</p>
-      </div>
-      <div>
-        <picture></picture>
-        <p>haha</p>
-      </div>
-      <div>
-        <picture></picture>
-        <p>haha</p>
-      </div>
-      <div>
-        <picture></picture>
-        <p>haha</p>
-      </div>
-      <div>
-        <picture></picture>
-        <p>haha</p>
-      </div>
-      <div>
-        <picture></picture>
-        <p>haha</p>
-      </div>
-      <div>
-        <picture></picture>
-        <p>haha</p>
-      </div>
-      <div>
-        <picture></picture>
-        <p>haha</p>
-      </div>
-      <div>
-        <picture></picture>
-        <p>haha</p>
-      </div>
-      <div>
-        <picture></picture>
-        <p>haha</p>
-      </div>
+      {Logements &&
+        Logements.map((logement) => {
+          return (
+            <div key={logement.id}>
+              {logement.title}
+              <img src={logement.cover} alt={logement.title} />
+            </div>
+          );
+        })}
     </div>
   );
 }

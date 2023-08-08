@@ -1,7 +1,7 @@
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 340px);
+    grid-template-rows: repeat(7, 340px);
     background-color: #F6F6F6;
     border-radius: 25px;
     margin: auto 100px;
@@ -11,6 +11,6 @@
 }
 .cards div {
     // width: 30%;
-    background: $red;
+    // background: $red;
     border-radius: 10px;
 }
