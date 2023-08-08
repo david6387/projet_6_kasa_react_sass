@@ -1,3 +1,4 @@
+import React from "react";
 import Banner from "../components/Banner";
 import Cards from "../components/Cards";
 
@@ -10,9 +11,7 @@ export default function Home() {
   return (
     <>
       <Banner />
-      {/* <div className="home-grid"> */}
       <Cards />
-      {/* </div> */}
     </>
   );
 }

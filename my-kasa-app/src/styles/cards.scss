@@ -11,6 +11,8 @@
     .card {
         display: flex;
         flex-direction: column;
+        aspect-ratio: 1/1;
+
         .image-container {
             position: relative;
             overflow: hidden;
@@ -19,6 +21,7 @@
                 max-height: 100%;
                 object-fit: cover;
                 border-radius: 10px;
+                aspect-ratio: 1/1;
             }
         .overlay {
             position: absolute;

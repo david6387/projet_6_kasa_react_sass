@@ -4,10 +4,11 @@
     background-position: center;
     background-size: auto;
     border-radius: 25px;
+
     .overlay {
         border-radius: 25px;
-        opacity: 0.3;
-        background: #000;
+        background-color: rgba(0, 0, 0, 0.3);
+
         h1 {
             display: flex;
             justify-content: center;

@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 import Home from "./pages/Home.js";
 import About from "./pages/About.js";
@@ -15,9 +15,12 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/accomodationinfo" element={<AccomodationInfo />} />
+        <Route path="/about" element={<About test="ahahahaah" />} />
+        <Route path="/accomodation">
+          <Route path=":pageId" element={<AccomodationInfo />} />
+        </Route>
         <Route path="/error" element={<ErrorPage />} />
+        <Route path="*" element={<Navigate to="/error" />} />
       </Routes>
       <Footer />
     </>
