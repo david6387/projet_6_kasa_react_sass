@@ -1,3 +1,50 @@
 export default function Cards() {
-  return <div className="cards"></div>;
+  return (
+    <div className="cards">
+      <div>
+        <picture></picture>
+        <p>haha</p>
+      </div>
+      <div>
+        <picture></picture>
+        <p>haha</p>
+      </div>
+      <div>
+        <picture></picture>
+        <p>haha</p>
+      </div>
+      <div>
+        <picture></picture>
+        <p>haha</p>
+      </div>
+      <div>
+        <picture></picture>
+        <p>haha</p>
+      </div>
+      <div>
+        <picture></picture>
+        <p>haha</p>
+      </div>
+      <div>
+        <picture></picture>
+        <p>haha</p>
+      </div>
+      <div>
+        <picture></picture>
+        <p>haha</p>
+      </div>
+      <div>
+        <picture></picture>
+        <p>haha</p>
+      </div>
+      <div>
+        <picture></picture>
+        <p>haha</p>
+      </div>
+      <div>
+        <picture></picture>
+        <p>haha</p>
+      </div>
+    </div>
+  );
 }

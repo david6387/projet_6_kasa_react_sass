@@ -1,0 +1,16 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 340px);
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin: auto 100px;
+    padding: 55px 50px 45px 50px;
+    column-gap: 60px;
+    row-gap: 50px;
+}
+.cards div {
+    // width: 30%;
+    background: $red;
+    border-radius: 10px;
+}

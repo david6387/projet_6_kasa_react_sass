@@ -2,12 +2,17 @@
 @import './variables-fonts.scss';
 @import './header.scss';
 @import './banner.scss';
+@import './cards.scss';
 @import './footer.scss';
 @import './collapse.scss';
 @import './error.scss';
+
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: auto;
     max-width: 1440px;
+    // display: flex;
+    // justify-items: center;
+    // flex-direction: column
     }
