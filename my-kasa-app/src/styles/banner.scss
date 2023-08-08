@@ -1,15 +1,19 @@
 .banner {
     margin: 50px 100px 45px 100px;
-    h1 {
-        display: flex;
-        justify-content: center;
-        padding: 80px;
-        background: url("https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/mer.png"), lightgray 50% / cover no-repeat;
-        background-position: center;
-        background-size: auto;
+    background: url("https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/mer.png"), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-size: auto;
+    border-radius: 25px;
+    .overlay {
         border-radius: 25px;
-        /* opacity: 0.3; */
-        font-size: 48px;
-        color: white;
-    }
+        opacity: 0.3;
+        background: #000;
+        h1 {
+            display: flex;
+            justify-content: center;
+            padding: 80px;
+            font-size: 48px;
+            color: white;
+        }
+    }     
 }
