@@ -8,8 +8,8 @@ export default function Cards() {
         Logements.map((logement) => {
           return (
             <div key={logement.id}>
-              {logement.title}
               <img src={logement.cover} alt={logement.title} />
+              <figcaption>{logement.title}</figcaption>
             </div>
           );
         })}
