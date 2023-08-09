@@ -9,19 +9,24 @@ export default function AccomodationInfo() {
   console.log(logementData);
   return (
     <>
+      <img
+        className="carousel"
+        src={logementData.pictures[0]}
+        alt={logementData.title}
+      />
       <div className="accomodation-info">
-        <img src={logementData.pictures[0]} alt={logementData.title} />
-        <h1>{logementData.title}</h1>
-        <p>{logementData.host.name}</p>
-        <div className="circle">
+        <div>
+          <h1>{logementData.title}</h1>
+          <h2>{logementData.location}</h2>
+          <Tags />
+        </div>
+        <div className="host-id">
+          <p>{logementData.host.name}</p>
           <img
             src={logementData.host.picture}
-            alt={`Portrait de $logement.host.name`}
+            alt={`Portrait de $logementData.host.name`}
           />
         </div>
-        <h2>{logementData.location}</h2>
-
-        <Tags />
       </div>
     </>
   );

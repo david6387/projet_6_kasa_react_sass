@@ -1,5 +1,22 @@
-.circle img{
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
+.carousel {
+    margin: auto 100px;
+    border-radius: 25px;
 }
+
+.accomodation-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 100px 25px 100px;
+}
+
+.host-id {
+    display: flex;
+    flex-direction: row;
+    img{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+    
+} 
