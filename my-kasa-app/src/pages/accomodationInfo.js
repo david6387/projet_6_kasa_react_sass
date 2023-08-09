@@ -13,10 +13,12 @@ export default function AccomodationInfo() {
         <img src={logementData.pictures[0]} alt={logementData.title} />
         <h1>{logementData.title}</h1>
         <p>{logementData.host.name}</p>
-        <img
-          src={logementData.host.picture}
-          alt={`Portrait de $logement.host.name`}
-        />
+        <div className="circle">
+          <img
+            src={logementData.host.picture}
+            alt={`Portrait de $logement.host.name`}
+          />
+        </div>
         <h2>{logementData.location}</h2>
 
         <Tags />
