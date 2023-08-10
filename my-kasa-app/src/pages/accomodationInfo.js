@@ -6,7 +6,7 @@ import Tags from "../components/Tags";
 export default function AccomodationInfo() {
   let { pageId } = useParams();
   const logementData = Logements[pageId];
-  console.log(logementData);
+  // console.log(logementData);
   return (
     <>
       <img

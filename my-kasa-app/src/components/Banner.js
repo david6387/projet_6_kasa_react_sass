@@ -1,10 +1,11 @@
 import React from "react";
 
-export default function Banner() {
+export default function Banner({ img, title }) {
   return (
     <div className="banner">
       <div className="overlay">
-        <h1>Chez vous, partout et ailleurs</h1>
+        <img src={img} alt="" />
+        {!title ? "" : <h1>{title}</h1>}
       </div>
     </div>
   );
