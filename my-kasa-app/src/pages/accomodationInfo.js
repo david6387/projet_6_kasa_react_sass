@@ -15,12 +15,12 @@ export default function AccomodationInfo() {
         alt={logementData.title}
       />
       <div className="accomodation-info">
-        <div>
+        <div className="house-info">
           <h1>{logementData.title}</h1>
           <h2>{logementData.location}</h2>
           <Tags />
         </div>
-        <div className="host-id">
+        <div className="host-info">
           <p>{logementData.host.name}</p>
           <img
             src={logementData.host.picture}

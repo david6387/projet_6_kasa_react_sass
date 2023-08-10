@@ -8,15 +8,27 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 30px 100px 25px 100px;
-}
-
-.host-id {
-    display: flex;
-    flex-direction: row;
-    img{
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
+    h1 {
+        font-size: 36px;
+        color: $red;
     }
-    
-} 
+    h2 {
+        font-size: 18px;
+        color: $red;
+    }
+    .host-info {
+        display: flex;
+        flex-direction: row;
+        p {
+            font-size: 18px;
+            color: $red;
+            max-width: 93px;
+        }
+        img{
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+        }
+        
+    } 
+}
