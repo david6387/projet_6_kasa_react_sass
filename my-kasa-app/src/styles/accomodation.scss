@@ -19,10 +19,12 @@
     .host-info {
         display: flex;
         flex-direction: row;
+        gap: 10px;
         p {
             font-size: 18px;
             color: $red;
             max-width: 93px;
+            text-align: right;
         }
         img{
             width: 64px;
