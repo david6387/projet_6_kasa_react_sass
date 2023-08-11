@@ -7,7 +7,7 @@ export default function About({ test }) {
   console.log(test);
   return (
     <>
-      <Banner img={BannerAbout} />
+      <Banner img={BannerAbout} alt="Montagnes enneigées" />
       <Collapse />
       <div className="about"></div>
     </>
