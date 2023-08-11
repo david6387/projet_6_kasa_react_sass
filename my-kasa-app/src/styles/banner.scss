@@ -1,17 +1,23 @@
 .banner {
     margin: 50px 100px 45px 100px;
-    background: url("https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/mer.png"), lightgray 50% / cover no-repeat;
-    background-position: center;
-    background-size: auto;
+    max-height: 223px;
     border-radius: 25px;
-
+    display: flex; 
+    position: relative;
+    overflow: hidden;
+    img {
+        object-fit: cover;
+    }
     .overlay {
-        border-radius: 25px;
         background-color: rgba(0, 0, 0, 0.3);
-
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
         h1 {
             display: flex;
-            justify-content: center;
             padding: 80px;
             font-size: 48px;
             color: white;
