@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, auto);
-    background-color: #f6f6f6;
+    background-color: $grey;
     border-radius: 25px;
     margin: auto 100px;
     padding: 55px 50px 45px 50px;

@@ -21,7 +21,7 @@ export default function Collapse({ title, description }) {
           onClick={collapseSwitch}
         />
       </button>
-      {open && <div>{description}</div>}
+      {open && <p>{description}</p>}
     </div>
   );
 }
