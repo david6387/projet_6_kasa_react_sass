@@ -15,7 +15,11 @@ export default function Collapse({ title, description }) {
     <div className="collapse">
       <button>
         <span>{title}</span>
-        <img src="../images/arrow.png" alt="" onClick={collapseSwitch} />
+        <img
+          src="https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/arrow.png"
+          alt=""
+          onClick={collapseSwitch}
+        />
       </button>
       {open && <div>{description}</div>}
     </div>

@@ -3,9 +3,7 @@ import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 import BannerAbout from "../images/montagne.png";
 
-export default function About({ test }) {
-  console.log(test);
-
+export default function About() {
   const [values, setValues] = useState([]);
 
   useEffect(() => {
