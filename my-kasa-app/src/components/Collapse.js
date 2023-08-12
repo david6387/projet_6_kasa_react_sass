@@ -15,7 +15,7 @@ export default function Collapse({ title, description }) {
     <div className="collapse">
       <button>
         <span>{title}</span>
-        <img src="" alt="" onClick={collapseSwitch} />
+        <img src="../images/arrow.png" alt="" onClick={collapseSwitch} />
       </button>
       {open && <div>{description}</div>}
     </div>

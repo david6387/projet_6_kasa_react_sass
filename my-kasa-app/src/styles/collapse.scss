@@ -1,0 +1,21 @@
+.values-collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    .collapse {
+        
+        button {
+            padding: 10px 20px 10px 15px;
+            border-radius: 5px;
+            background: $red;
+            border: none;
+            color: white;
+            font-family: 'Montserrat';
+            font-size: 24px;
+            max-width: 1023px;
+        }
+    }
+}
+

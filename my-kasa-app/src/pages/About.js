@@ -21,7 +21,16 @@ export default function About({ test }) {
   return (
     <>
       <Banner img={BannerAbout} alt="Montagnes enneigées" />
-      {values && values.map((value) => <Collapse key={value.id} />)}
+      <div className="values-collapse">
+        {values &&
+          values.map((value) => (
+            <Collapse
+              key={value.id}
+              title={value.name}
+              description={value.description}
+            />
+          ))}
+      </div>
       {/* <div className="about"></div> */}
     </>
   );
