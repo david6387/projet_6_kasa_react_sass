@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Logements from "../data/logements.json";
 import Tags from "../components/Tags";
+import ImageSlider from "../components/ImageSlider";
 
 export default function AccomodationInfo() {
   let { pageId } = useParams();
@@ -9,11 +10,14 @@ export default function AccomodationInfo() {
   // console.log(logementData);
   return (
     <>
-      <img
+      <div>
+        <ImageSlider />
+      </div>
+      {/* <img
         className="carousel"
         src={logementData.pictures[0]}
         alt={logementData.title}
-      />
+      /> */}
       <div className="accomodation-info">
         <div className="house-info">
           <h1>{logementData.title}</h1>
