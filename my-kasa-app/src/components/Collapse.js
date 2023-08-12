@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Collapse({ title, description }) {
   const [open, setOpen] = useState(false);
@@ -10,6 +10,18 @@ export default function Collapse({ title, description }) {
       setOpen(false);
     }
   };
+
+  const [values, setValues] = useState(null);
+
+  useEffect(() => {
+    fetch("./data/values.json")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setValues(data);
+      });
+  }, []);
 
   return (
     <div className="collapse">
