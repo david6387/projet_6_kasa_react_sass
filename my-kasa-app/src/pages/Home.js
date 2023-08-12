@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Banner from "../components/Banner";
-import Cards from "../components/Cards";
+// import Cards from "../components/Cards";
 import BannerHome from "../images/mer.png";
+import Card from "../components/Card";
 
 export default function Home() {
   // les states et les variables (états, données)
@@ -22,7 +23,18 @@ export default function Home() {
   return (
     <>
       <Banner img={BannerHome} title="Chez vous, partout et ailleurs" />
-      <Cards />
+      {/* <Cards> */}
+      <div className="cards">
+        {logements &&
+          logements.map((logement) => (
+            <Card
+              key={logement.id}
+              title={logement.title}
+              img={logement.cover}
+            />
+          ))}
+      </div>
+      {/* </Cards> */}
     </>
   );
 }
