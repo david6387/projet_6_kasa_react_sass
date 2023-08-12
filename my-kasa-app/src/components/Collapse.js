@@ -11,18 +11,6 @@ export default function Collapse({ title, description }) {
     }
   };
 
-  const [values, setValues] = useState(null);
-
-  useEffect(() => {
-    fetch("./data/values.json")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setValues(data);
-      });
-  }, []);
-
   return (
     <div className="collapse">
       <button>
