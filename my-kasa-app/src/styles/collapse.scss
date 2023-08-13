@@ -10,10 +10,13 @@
         flex-direction: column;
         width: 80%;
         p {
-            padding: 10px 20px 10px 15px;
+            position: relative;
+            padding: 20px 20px 15px 15px;
             background: $grey;
             color: $red;
             border-radius: 0 0 5px 5px;
+            top: -4px;
+            z-index: 10;
         }
         button {
             display: flex;
@@ -27,6 +30,8 @@
             font-family: 'Montserrat';
             font-size: 24px;
             width: 100%;
+            z-index: 20;
+        
         }
     }
 }
