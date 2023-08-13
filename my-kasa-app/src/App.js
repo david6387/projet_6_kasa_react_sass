@@ -1,13 +1,13 @@
 // import { useState } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
-import Home from "./pages/Home.js";
-import About from "./pages/About.js";
-import AccomodationInfo from "./pages/AccomodationInfo.js";
-import ErrorPage from "./pages/ErrorPage.js";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import AccomodationInfo from "./pages/AccomodationInfo.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
 import "./styles/app.scss";
-import Header from "./components/Header.js";
-import Footer from "./components/Footer.js";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
