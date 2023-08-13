@@ -18,6 +18,7 @@ export default function Collapse({ title, description }) {
         <img
           src="https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/arrow.png"
           alt=""
+          className={open ? "rotate" : ""}
           onClick={collapseSwitch}
         />
       </button>
