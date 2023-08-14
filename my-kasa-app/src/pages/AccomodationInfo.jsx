@@ -1,12 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Logements from "../data/logements.json";
 import Tags from "../components/Tags";
 import ImageSlider from "../components/ImageSlider";
 
-export default function AccomodationInfo() {
+export default function AccomodationInfo({logements}) {
   let { pageId } = useParams();
-  const logementData = Logements[pageId];
+  const logementData = logements[pageId];
   // console.log(logementData);
   return (
     <>
@@ -22,7 +21,7 @@ export default function AccomodationInfo() {
         <div className="house-info">
           <h1>{logementData.title}</h1>
           <h2>{logementData.location}</h2>
-          <Tags />
+          <Tags logements={logements}/>
         </div>
         <div className="host-info">
           <p>{logementData.host.name}</p>

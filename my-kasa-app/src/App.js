@@ -31,7 +31,10 @@ function App() {
         <Route path="/" element={<Home logements={logements} />} />
         <Route path="/about" element={<About />} />
         <Route path="/accomodation">
-          <Route path=":pageId" element={<AccomodationInfo />} />
+          <Route
+            path=":pageId"
+            element={<AccomodationInfo logements={logements} />}
+          />
         </Route>
         <Route path="/error" element={<ErrorPage />} />
         <Route path="*" element={<Navigate to="/error" />} />
