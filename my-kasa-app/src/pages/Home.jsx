@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import Banner from "../components/Banner";
 // import Cards from "../components/Cards";
 import BannerHome from "../images/mer.png";

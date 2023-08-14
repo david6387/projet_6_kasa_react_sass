@@ -27,7 +27,7 @@ export default function AccomodationInfo({logements}) {
           <p>{logementData.host.name}</p>
           <img
             src={logementData.host.picture}
-            alt={`Portrait de $logementData.host.name`}
+            alt={`Portrait de ${logementData.host.name}`}
           />
         </div>
       </div>
