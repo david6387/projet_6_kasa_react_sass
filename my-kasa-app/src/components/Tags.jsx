@@ -1,9 +1,7 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 
-export default function Tags({ logements, title }) {
-  let { pageId } = useParams();
-  const logementData = logements[pageId];
+
+export default function Tags({ title }) {
 
   return (
     <li>{title}</li>
