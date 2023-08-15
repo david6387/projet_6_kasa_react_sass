@@ -16,7 +16,7 @@ export default function AccomodationInfo({logements}) {
   // console.log(logementData);
   return (
     <>
-      <div>
+      <div className="carousel">
         <ImageSlider />
       </div>
       {/* <img
