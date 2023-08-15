@@ -6,6 +6,8 @@ import ImageSlider from "../components/ImageSlider";
 export default function AccomodationInfo({logements}) {
   let { pageId } = useParams();
   const logementData = logements[pageId];
+  const tagsData = logementData.tags;
+  console.log(tagsData);
   // console.log(logementData);
   return (
     <>
@@ -21,7 +23,12 @@ export default function AccomodationInfo({logements}) {
         <div className="house-info">
           <h1>{logementData.title}</h1>
           <h2>{logementData.location}</h2>
-          <Tags logements={logements}/>
+            <ul className="tags">
+              {tagsData && 
+                tagsData.map((tagData, index) => (
+                    <Tags key={index} logements={logements} title={tagData}/>
+                  ))}
+            </ul>
         </div>
         <div className="host-info">
           <p>{logementData.host.name}</p>
