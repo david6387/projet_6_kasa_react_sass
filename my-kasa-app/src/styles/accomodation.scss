@@ -1,6 +1,12 @@
 .carousel {
     margin: auto 100px;
-    border-radius: 25px;
+    max-height: 415px;
+    position: relative;
+    overflow: hidden;
+    img {
+        object-fit: cover;
+    }
+    
 }
 
 .accomodation-info {
