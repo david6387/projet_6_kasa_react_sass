@@ -50,12 +50,14 @@ export default function AccomodationInfo({logements}) {
         title="Description"
         description={logementData.description}
         />
-        <Collapse
-          title="Équipements"
-          description={equipmentsData.map((equipment) => (
-            <p className="equipment" key={equipment}>{equipment}</p>
-          ))}
-        />
+        
+          <Collapse
+            title="Équipements"
+            description={equipmentsData.map((equipment) => (
+              <li className="equipment" key={equipment}>{equipment}</li>
+            ))}
+          />
+        
       </div>
     </>
   );
