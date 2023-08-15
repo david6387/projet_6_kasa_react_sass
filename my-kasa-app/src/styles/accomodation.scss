@@ -5,13 +5,35 @@
     border-radius: 25px;
     position: relative;
     overflow: hidden;
+
     img {
         object-fit: cover;
     }
+
     .overlay {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        .currentImage {
+            position: absolute;
+            font-size: 18px;
+            color: white;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 20px;
+        }
     }
+}
+
+.rate {
+    margin-top: 20px;
 }
 
 .accomodation-info {
@@ -19,27 +41,33 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 30px 100px 25px 100px;
+
     h1 {
         font-size: 36px;
         color: $red;
     }
+
     h2 {
         font-size: 18px;
         color: $red;
     }
+
     .host-info {
         display: flex;
         flex-direction: column;
+
         .host {
             display: flex;
             gap: 10px;
         }
+
         p {
             font-size: 18px;
             color: $red;
             max-width: 93px;
             text-align: right;
         }
+
         img{
             width: 64px;
             height: 64px;
@@ -52,25 +80,33 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 100px;
+
     .collapse {
         display: flex;
         flex-direction: column;
         width: 45%;
-        p {
+
+        p, ul {
             position: relative;
             padding: 20px 20px 15px 15px;
             background: $grey;
             color: $red;
             border-radius: 0 0 5px 5px;
-            top: -4px;
+            top: -7px;
             z-index: 10;
             line-height: 1.5em;
         }
-        .equipment {
+
+        ul {
             list-style: none;
         }
+
+        li {
+            color: $red;
+        }
+
         button {
             display: flex;
             align-items: center;

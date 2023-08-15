@@ -9,7 +9,7 @@ export default function Collapse({ title, description }) {
     } else {
       setOpen(false);
     }
-  };
+  }
 
   return (
     <div className="collapse">
@@ -22,7 +22,7 @@ export default function Collapse({ title, description }) {
           onClick={collapseSwitch}
         />
       </button>
-      {open && <p>{description}</p>}
+      {open && (Array.isArray(description) ? <ul>{description.map((element,index) => <li key={index}>{element}</li>)}</ul> : <p>{description}</p>)}
     </div>
   );
 }
