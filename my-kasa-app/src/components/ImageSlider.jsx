@@ -1,5 +1,6 @@
 import React from "react";
 
-export default function ImageSlider() {
-  return <div>Carousel</div>;
-}
+export default function ImageSlider({slides}) {
+  return (
+  <img src={slides} alt=""/>
+)}

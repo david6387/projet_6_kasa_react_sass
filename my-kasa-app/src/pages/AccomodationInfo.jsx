@@ -10,6 +10,8 @@ export default function AccomodationInfo({logements}) {
   const logementData = logements[pageId];
   const tagsData = logementData.tags;
   const equipmentsData = logementData.equipments
+  const slides = logementData.pictures
+  console.log(slides);
   // console.log(logementData.description);
   // console.log(logementData.equipments)
   // console.log(tagsData);
@@ -17,7 +19,7 @@ export default function AccomodationInfo({logements}) {
   return (
     <>
       <div className="carousel">
-        <ImageSlider />
+        <ImageSlider slides ={slides}/>
       </div>
       {/* <img
         className="carousel"
