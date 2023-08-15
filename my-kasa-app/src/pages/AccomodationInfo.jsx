@@ -31,7 +31,7 @@ export default function AccomodationInfo({logements}) {
             <ul className="tags">
               {tagsData && 
                 tagsData.map((tagData, index) => (
-                    <Tags key={index} logements={logements} title={tagData}/>
+                    <Tags key={index} title={tagData}/>
                   ))}
             </ul>
         </div>
