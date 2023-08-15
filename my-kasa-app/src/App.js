@@ -19,6 +19,9 @@ function App() {
       .then((response) => response.json())
       .then((datas) => {
         // console.log(datas);
+        datas.forEach((data) => {
+          data.slug = data.title.toLowerCase().replaceAll(" ", "-");
+        });
         setLogements(datas);
       })
       .catch((error) => console.log(error));

@@ -7,11 +7,10 @@ import Rate from "../components/Rate";
 
 export default function AccomodationInfo({logements}) {
   let { pageId } = useParams();
-  const logementData = logements[pageId];
+  const logementData = logements.find((logement) => pageId === logement.slug)
   const tagsData = logementData.tags;
   const equipmentsData = logementData.equipments
   const slides = logementData.pictures
-  console.log(slides);
   // console.log(logementData.description);
   // console.log(logementData.equipments)
   // console.log(tagsData);
@@ -19,9 +18,7 @@ export default function AccomodationInfo({logements}) {
   return (
     <>
       <div className="carousel">
-        {slides && slides.map((slide)=> (
-          <ImageSlider key={slide} slides ={slide}/>
-        ))}
+        <ImageSlider slides={slides}/>
       </div>
       {/* <img
         className="carousel"
@@ -46,7 +43,7 @@ export default function AccomodationInfo({logements}) {
               src={logementData.host.picture}
               alt={`Portrait de ${logementData.host.name}`}/>
             </div>
-          <div className="rate"><Rate/></div>
+          <div className="rate"><Rate rating={logementData.rating}/></div>
         </div>
       </div>
       <div className="details-collapse">
@@ -54,14 +51,10 @@ export default function AccomodationInfo({logements}) {
         title="Description"
         description={logementData.description}
         />
-        
-          <Collapse
-            title="Équipements"
-            description={equipmentsData.map((equipment) => (
-              <li className="equipment" key={equipment}>{equipment}</li>
-            ))}
-          />
-        
+        <Collapse
+          title="Équipements"
+          description={equipmentsData}
+        />
       </div>
     </>
   );
