@@ -19,7 +19,9 @@ export default function AccomodationInfo({logements}) {
   return (
     <>
       <div className="carousel">
-        <ImageSlider slides ={slides}/>
+        {slides && slides.map((slide)=> (
+          <ImageSlider key={slide} slides ={slide}/>
+        ))}
       </div>
       {/* <img
         className="carousel"
