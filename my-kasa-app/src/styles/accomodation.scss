@@ -1,12 +1,17 @@
 .carousel {
     margin: auto 100px;
+    display: flex;
     max-height: 415px;
+    border-radius: 25px;
     position: relative;
     overflow: hidden;
     img {
         object-fit: cover;
     }
-    
+    .overlay {
+        display: flex;
+        position: absolute;
+    }
 }
 
 .accomodation-info {
