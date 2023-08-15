@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Tags from "../components/Tags";
 import ImageSlider from "../components/ImageSlider";
 import Collapse from "../components/Collapse";
+import Rate from "../components/Rate";
 
 export default function AccomodationInfo({logements}) {
   let { pageId } = useParams();
@@ -39,10 +40,9 @@ export default function AccomodationInfo({logements}) {
             <p>{logementData.host.name}</p>
             <img
               src={logementData.host.picture}
-              alt={`Portrait de ${logementData.host.name}`}
-            />
-          </div>
-          <div className="rate">1/5</div>
+              alt={`Portrait de ${logementData.host.name}`}/>
+            </div>
+          <div className="rate"><Rate/></div>
         </div>
       </div>
       <div className="details-collapse">
