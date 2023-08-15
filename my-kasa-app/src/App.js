@@ -18,7 +18,7 @@ function App() {
     fetch("./data/logements.json")
       .then((response) => response.json())
       .then((datas) => {
-        console.log(datas);
+        // console.log(datas);
         setLogements(datas);
       })
       .catch((error) => console.log(error));

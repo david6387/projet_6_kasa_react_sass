@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 export default function Collapse({ title, description }) {
   const [open, setOpen] = useState(false);

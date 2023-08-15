@@ -2,12 +2,16 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Tags from "../components/Tags";
 import ImageSlider from "../components/ImageSlider";
+import Collapse from "../components/Collapse";
 
 export default function AccomodationInfo({logements}) {
   let { pageId } = useParams();
   const logementData = logements[pageId];
   const tagsData = logementData.tags;
-  console.log(tagsData);
+  const equipmentsData = logementData.equipments
+  // console.log(logementData.description);
+  // console.log(logementData.equipments)
+  // console.log(tagsData);
   // console.log(logementData);
   return (
     <>
@@ -31,12 +35,27 @@ export default function AccomodationInfo({logements}) {
             </ul>
         </div>
         <div className="host-info">
-          <p>{logementData.host.name}</p>
-          <img
-            src={logementData.host.picture}
-            alt={`Portrait de ${logementData.host.name}`}
-          />
+          <div className="host">
+            <p>{logementData.host.name}</p>
+            <img
+              src={logementData.host.picture}
+              alt={`Portrait de ${logementData.host.name}`}
+            />
+          </div>
+          <div className="rate">1/5</div>
         </div>
+      </div>
+      <div className="details-collapse">
+        <Collapse
+        title="Description"
+        description={logementData.description}
+        />
+        <Collapse
+          title="Équipements"
+          description={equipmentsData.map((equipment) => (
+            <p className="equipment" key={equipment}>{equipment}</p>
+          ))}
+        />
       </div>
     </>
   );
