@@ -23,10 +23,13 @@ export default function ImageSlider({ slides }) {
     <>
   <img src={slides[currentPicture]} alt="coco"/>
   <div className="overlay">
-    <img src="https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/arrow-back.png" onClick={handlePrevClick} alt="arrow previous"/>
-    <img src="https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/arrow-forward.png" onClick={handleNextClick} alt="arrow next"/>
-    {slides.length > 1 && (
+  {slides.length > 1 && (
+    <>
+    <img src="https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/arrow-back.png" onClick={handlePrevClick} alt="previous"/>
+    <img src="https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/arrow-forward.png" onClick={handleNextClick} 
+    alt="next"/>
     <p className="currentImage">{currentPicture + 1}/{slides.length}</p>
+    </>
     )}
   </div>
   </>
