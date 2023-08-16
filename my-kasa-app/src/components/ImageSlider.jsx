@@ -1,13 +1,12 @@
 import {React, useState} from "react";
 
-export default function ImageSlider({ slides }) {
+export default function ImageSlider({ slides, alt }) {
   const [currentPicture, setCurrentPicture] = useState(0)
 
   function handlePrevClick() {
     if (currentPicture === (0))  {
       return setCurrentPicture(slides.length - 1)
     }
-
     return setCurrentPicture(currentPicture - 1)
   }
 
@@ -15,13 +14,12 @@ export default function ImageSlider({ slides }) {
     if (currentPicture === slides.length - 1) {
       return setCurrentPicture(0)
     }
-
     return setCurrentPicture(currentPicture + 1)
   }
 
   return (
     <>
-  <img src={slides[currentPicture]} alt="coco"/>
+  <img src={slides[currentPicture]} alt={alt}/>
   <div className="overlay">
   {slides.length > 1 && (
     <>

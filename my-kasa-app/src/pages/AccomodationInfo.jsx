@@ -11,20 +11,13 @@ export default function AccomodationInfo({logements}) {
   const tagsData = logementData.tags;
   const equipmentsData = logementData.equipments
   const slides = logementData.pictures
-  // console.log(logementData.description);
-  // console.log(logementData.equipments)
-  // console.log(tagsData);
-  // console.log(logementData);
+  const alt = logementData.title
+  
   return (
     <>
       <div className="carousel">
-        <ImageSlider slides={slides}/>
+        <ImageSlider slides={slides} alt={alt}/>
       </div>
-      {/* <img
-        className="carousel"
-        src={logementData.pictures[0]}
-        alt={logementData.title}
-      /> */}
       <div className="accomodation-info">
         <div className="house-info">
           <h1>{logementData.title}</h1>
