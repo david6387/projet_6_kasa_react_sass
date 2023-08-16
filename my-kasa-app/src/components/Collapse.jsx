@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ArrowCollapse from "../images/arrow.png"
 
 export default function Collapse({ title, description }) {
   const [open, setOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Collapse({ title, description }) {
       <button>
         <span>{title}</span>
         <img
-          src="https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/arrow.png"
+          src={ArrowCollapse}
           alt=""
           className={open ? "rotate" : ""}
           onClick={collapseSwitch}

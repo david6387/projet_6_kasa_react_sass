@@ -1,30 +1,52 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import Tags from "../components/Tags";
 import ImageSlider from "../components/ImageSlider";
 import Collapse from "../components/Collapse";
 import Rate from "../components/Rate";
+import ErrorPage from "./ErrorPage";
 
 export default function AccomodationInfo({logements}) {
   let { pageId } = useParams();
-  const logementData = logements.find((logement) => pageId === logement.slug)
-  const tagsData = logementData.tags;
-  const equipmentsData = logementData.equipments
-  const slides = logementData.pictures
-  const alt = logementData.title
+  const navigate = useNavigate();
+
+  const [logementData, setLogementData] = useState()
+  // const beforeRender =()=> {
+  //   setLogementData(logements.find((logement) => pageId === logement.slug))
+  //   console.log(logementData);
+  //   if (!logementData) {
+  //     navigate("/error")
+  //   }
+  // }
+  // beforeRender()
+  useEffect(() => {
+    setLogementData(logements.find((logement) => pageId === logement.slug))
+    console.log(logementData);
+    if (!logementData) {
+      navigate("/error")
+    }
+  }, [logementData, pageId, navigate, logements])
+  
+  if (!logementData) {
+    return <ErrorPage/>
+  }
+  // const tagsData = logementData.tags;
+  // const equipmentsData = logementData.equipments
+  // const slides = logementData.pictures
+  // const alt = logementData.title
   
   return (
     <>
       <div className="carousel">
-        <ImageSlider slides={slides} alt={alt}/>
+        <ImageSlider slides={logementData.pictures} alt={logementData.title}/>
       </div>
       <div className="accomodation-info">
         <div className="house-info">
           <h1>{logementData.title}</h1>
           <h2>{logementData.location}</h2>
             <ul className="tags">
-              {tagsData && 
-                tagsData.map((tagData, index) => (
+              {logementData.tags && 
+                logementData.tags.map((tagData, index) => (
                     <Tags key={index} title={tagData}/>
                   ))}
             </ul>
@@ -46,7 +68,7 @@ export default function AccomodationInfo({logements}) {
         />
         <Collapse
           title="Équipements"
-          description={equipmentsData}
+          description={logementData.equipments}
         />
       </div>
     </>

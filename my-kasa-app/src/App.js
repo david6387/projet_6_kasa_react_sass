@@ -15,10 +15,12 @@ function App() {
 
   // les fonctions , les comportements
   useEffect(() => {
-    fetch("./data/logements.json")
-      .then((response) => response.json())
+    fetch("http://localhost:3000/data/logements.json")
+      .then((response) => {
+        return response.json();
+      })
       .then((datas) => {
-        // console.log(datas);
+        console.log(datas);
         datas.forEach((data) => {
           data.slug = data.title.toLowerCase().replaceAll(" ", "-");
         });
