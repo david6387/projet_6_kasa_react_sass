@@ -8,13 +8,16 @@
     padding: 55px 50px 45px 50px;
     column-gap: 60px;
     row-gap: 50px;
+
     .card {
         display: flex;
         flex-direction: column;
         aspect-ratio: 1/1;
+
         .image-container {
             position: relative;
             overflow: hidden;
+
             img {
                 max-width: 100%;
                 max-height: 100%;
@@ -22,6 +25,7 @@
                 border-radius: 10px;
                 aspect-ratio: 1/1;
             }
+
         .overlay {
             position: absolute;
             top: -3px;
@@ -34,6 +38,7 @@
             opacity: 1; 
             background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
             border-radius: 10px;
+            
             figcaption {
                     padding: 20px;
                     color: white; 
