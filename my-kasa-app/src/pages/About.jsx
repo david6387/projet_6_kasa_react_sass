@@ -29,7 +29,6 @@ export default function About() {
             />
           ))}
       </div>
-      {/* <div className="about"></div> */}
     </>
   );
 }
