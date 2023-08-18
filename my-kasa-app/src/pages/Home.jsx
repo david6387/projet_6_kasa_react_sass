@@ -4,17 +4,17 @@ import Card from "../components/Card";
 import { Link } from "react-router-dom";
 import { useAccomodations } from "../contexts/AccomodationContext";
 
-export default function Home({logements}) {
+export default function Home() {
 
   const accomodations = useAccomodations()
-  console.log(accomodations);
+  // console.log(accomodations);
 
   return (
     <>
       <Banner img={BannerHome} title="Chez vous, partout et ailleurs" />
       <div className="cards">
-        {logements &&
-          logements.map((logement) => (
+        {accomodations &&
+          accomodations.map((logement) => (
             <Link key={logement.id} to={`accomodation/${logement.slug}`}>
               <Card title={logement.title} img={logement.cover} />
             </Link>

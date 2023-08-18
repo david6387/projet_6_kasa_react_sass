@@ -9,8 +9,14 @@ export const AccomodationProvider = ({children}) => {
     useEffect(() => {
         fetch("/data/logements.json")
         .then((res)=> {return res.json()})
-        .then((datas)=>setAccomodations(datas))
-        .catch((error)=> console.log(error))
+        .then((datas)=> {
+            console.log(datas);
+            datas.forEach((data) => {
+                data.slug = data.title.toLowerCase().replaceAll("", "-");
+            });
+            setAccomodations(datas)
+        })
+        .catch((error) => console.log(error))
     },[])
     return <AccomodationContext.Provider value={accomodations}>{children}</AccomodationContext.Provider>
 }

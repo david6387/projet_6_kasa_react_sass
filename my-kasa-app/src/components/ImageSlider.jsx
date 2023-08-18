@@ -1,4 +1,5 @@
 import {React, useState} from "react";
+import ArrowBack from "../images/arrow-back"
 
 export default function ImageSlider({ slides, alt }) {
   const [currentPicture, setCurrentPicture] = useState(0)

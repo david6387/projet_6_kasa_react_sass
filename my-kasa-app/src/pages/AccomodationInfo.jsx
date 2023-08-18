@@ -1,16 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Tags from "../components/Tags";
 import ImageSlider from "../components/ImageSlider";
 import Collapse from "../components/Collapse";
 import Rate from "../components/Rate";
 import ErrorPage from "./ErrorPage";
+import { useAccomodations } from "../contexts/AccomodationContext";
 
-export default function AccomodationInfo({logements}) {
+export default function AccomodationInfo() {
   let { pageId } = useParams();
   const navigate = useNavigate();
+  const accomodations = useAccomodations()
+  console.log(accomodations);
 
-  const [logementData, setLogementData] = useState()
+
+  const logementData = accomodations.find((logement) => pageId === logement.slug)
   // const beforeRender =()=> {
   //   setLogementData(logements.find((logement) => pageId === logement.slug))
   //   console.log(logementData);
@@ -18,14 +22,14 @@ export default function AccomodationInfo({logements}) {
   //     navigate("/error")
   //   }
   // }
-  // beforeRender()
-  useEffect(() => {
-    setLogementData(logements.find((logement) => pageId === logement.slug))
-    console.log(logementData);
-    if (!logementData) {
-      navigate("/error")
-    }
-  }, [logementData, pageId, navigate, logements])
+  // // beforeRender()
+  // useEffect(() => {
+  //   setLogementData(logements.find((logement) => pageId === logement.slug))
+  //   console.log(logementData);
+  //   if (!logementData) {
+  //     navigate("/error")
+  //   }
+  // }, [logementData, pageId, navigate, logements])
   
   if (!logementData) {
     return <ErrorPage/>
