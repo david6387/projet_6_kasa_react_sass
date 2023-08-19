@@ -14,3 +14,16 @@
         margin-bottom: 30px;
     }
 }
+
+@media (max-width: 375px) {
+    .footer {
+        margin-top: 20px;
+        font-size: 12px;
+        row-gap: 10px;
+        text-align: center;
+        div {
+            margin-bottom: 60px;
+        }
+    }
+    
+}
