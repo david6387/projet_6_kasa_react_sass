@@ -20,6 +20,10 @@
         top: 0;
         left: 0;
 
+        img {
+            cursor: pointer;
+        }
+
         .currentImage {
             position: absolute;
             font-size: 18px;
@@ -97,6 +101,10 @@
             top: -7px;
             z-index: 10;
             line-height: 1.5em;
+        }
+        
+        img {
+            cursor: pointer;
         }
 
         ul {

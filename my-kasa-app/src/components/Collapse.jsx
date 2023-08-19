@@ -18,7 +18,7 @@ export default function Collapse({ title, description }) {
         <span>{title}</span>
         <img
           src={ArrowCollapse}
-          alt=""
+          alt="Ouvrir et fermer menu déroulant"
           className={open ? "rotate" : ""}
           onClick={collapseSwitch}
         />
