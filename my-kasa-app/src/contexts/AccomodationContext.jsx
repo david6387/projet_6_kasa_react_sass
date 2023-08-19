@@ -12,7 +12,7 @@ export const AccomodationProvider = ({children}) => {
         .then((datas)=> {
             console.log(datas);
             datas.forEach((data) => {
-                data.slug = data.title.toLowerCase().replaceAll("", "-");
+                data.slug = data.title.toLowerCase().replaceAll(" ", "-");
             });
             setAccomodations(datas)
         })
