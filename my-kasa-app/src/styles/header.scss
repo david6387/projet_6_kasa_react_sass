@@ -19,3 +19,11 @@
     }
 }
 
+@media (max-width: 375px) {
+    .header {
+        margin: 20px;
+        a {
+        text-transform: uppercase;
+        }
+    }
+}
