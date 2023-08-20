@@ -47,3 +47,18 @@
     transform: rotate(180deg);
     transition: all 0.7s ease;
 }
+
+@media (max-width: 375px) {
+
+    .values-collapse {
+        margin: 0 20px;
+        gap: 20px;
+        .collapse {
+            width: 100%;
+            button {
+                font-size: 13px;
+                padding: 10px;
+            }
+        }
+    }
+}

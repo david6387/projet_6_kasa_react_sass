@@ -131,3 +131,66 @@
         }    
     }
 }
+
+
+@media (max-width: 375px) {
+
+    .carousel {
+        height: 255px;
+        border-radius: 10px;
+        margin: auto 20px;
+        .overlay img {
+            width: 30px;
+        }
+    }
+
+
+
+    .accomodation-info {
+        flex-direction: column;
+        margin: 15px 20px;
+
+        h1 {
+            font-size: 18px;
+        }
+        h2 {
+            font-size: 14px;
+        }
+
+        .host-info {
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 15px;
+            .host p {
+                font-size: 12px;
+                max-width: 80px;
+            }
+            .host img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+        }
+    }
+    
+    .rate {
+        margin: 0;
+    }
+
+    .details-collapse {
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 20px;
+        .collapse {
+            width: 100%;
+            button {
+                font-size: 13px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+    
+    }
+
+}

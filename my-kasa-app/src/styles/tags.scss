@@ -10,3 +10,9 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 375px) {
+    .tags li {
+        font-size: 10px;
+    }
+}
