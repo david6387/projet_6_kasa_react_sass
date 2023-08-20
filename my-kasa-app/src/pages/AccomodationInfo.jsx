@@ -15,30 +15,11 @@ export default function AccomodationInfo() {
 
 
   const logementData = accomodations.find((logement) => pageId === logement.slug)
-  // const beforeRender =()=> {
-  //   setLogementData(logements.find((logement) => pageId === logement.slug))
-  //   console.log(logementData);
-  //   if (!logementData) {
-  //     navigate("/error")
-  //   }
-  // }
-  // // beforeRender()
-  // useEffect(() => {
-  //   setLogementData(logements.find((logement) => pageId === logement.slug))
-  //   console.log(logementData);
-  //   if (!logementData) {
-  //     navigate("/error")
-  //   }
-  // }, [logementData, pageId, navigate, logements])
-  
+    
   if (!logementData) {
     return <ErrorPage/>
   }
-  // const tagsData = logementData.tags;
-  // const equipmentsData = logementData.equipments
-  // const slides = logementData.pictures
-  // const alt = logementData.title
-  
+    
   return (
     <>
       <div className="carousel">

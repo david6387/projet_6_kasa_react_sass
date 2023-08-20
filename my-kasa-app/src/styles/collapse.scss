@@ -48,6 +48,17 @@
     transition: all 0.7s ease;
 }
 
+@media (max-width: 750px) {
+    .values-collapse {
+        margin: 0 50px;
+        .collapse {
+            width: 100%;
+        }
+    }
+}
+
+
+
 @media (max-width: 375px) {
 
     .values-collapse {

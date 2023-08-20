@@ -20,12 +20,28 @@
     }
 }
 
+@media (max-width: 750px) {
+    
+    .error-page {
+        margin: 121px auto;
+        gap: 121px;
+        :first-child{
+            font-size: 192px;
+        }
+        :last-child{
+            font-size: 14px;
+        }
+        .middle{
+            font-size: 18px;
+        }
+    }
+}
 
 @media (max-width: 375px) {
 
     .error-page {
         margin: 113px auto;
-        gap: 139px;
+        gap: 113px;
         :first-child{
             font-size: 96px;
         }

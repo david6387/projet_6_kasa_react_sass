@@ -19,6 +19,20 @@
     }
 }
 
+@media (max-width: 750px) {
+    .header {
+        font-size: 18px;
+        margin: 50px;
+        ul {
+            gap: 30px;
+        }
+        img {
+            max-width: 175px;
+        }
+    }
+}
+
+
 @media (max-width: 375px) {
     .header {
         font-size: 12px;

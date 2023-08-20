@@ -29,6 +29,17 @@
     }     
 }
 
+@media (max-width: 750px) {
+    .banner {
+        margin: 50px;
+        .overlay h1 {
+            font-size: 32px;
+            padding: 27px;
+        }
+    }
+}
+
+
 @media (max-width: 375px) {
     .banner {
         margin: 20px;
