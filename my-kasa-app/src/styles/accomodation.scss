@@ -135,6 +135,31 @@
     }
 }
 
+@media (max-width: 750px) {
+
+    .carousel {
+        
+        margin: auto 50px;
+        .overlay img {
+            width: 70px;
+        }
+    }
+
+    .accomodation-info {
+        margin: 20px 50px;
+    }
+
+    .details-collapse {
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 50px;
+        .collapse {
+            width: 100%;
+        }
+    
+    }
+
+}
 
 @media (max-width: 375px) {
 
@@ -146,8 +171,6 @@
             width: 30px;
         }
     }
-
-
 
     .accomodation-info {
         flex-direction: column;
