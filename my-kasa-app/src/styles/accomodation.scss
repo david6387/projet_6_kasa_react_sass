@@ -46,14 +46,17 @@
     justify-content: space-between;
     margin: 30px 100px 25px 100px;
 
-    h1 {
-        font-size: 36px;
-        color: $red;
-    }
-
-    h2 {
-        font-size: 18px;
-        color: $red;
+    .house-info {
+        width: 70%;
+        h1 {
+            font-size: 36px;
+            color: $red;
+        }
+        h2 {
+            font-size: 18px;
+            color: $red;
+        }
+    
     }
 
     .host-info {
@@ -90,7 +93,7 @@
     .collapse {
         display: flex;
         flex-direction: column;
-        width: 45%;
+        width: 47%;
 
         p, ul {
             position: relative;
