@@ -43,11 +43,13 @@
 @media (max-width: 375px) {
     .banner {
         margin: 20px;
-        max-height: 111px;
         border-radius: 10px;
         .overlay h1 {
             font-size: 24px;
             padding: 18px;
         }
+    }
+    .home-banner {
+        max-height: 111px;
     }
 }

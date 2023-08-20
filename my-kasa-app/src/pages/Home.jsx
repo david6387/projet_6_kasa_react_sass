@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <>
-      <Banner img={BannerHome} title="Chez vous, partout et ailleurs" />
+      <Banner img={BannerHome} title="Chez vous, partout et ailleurs" className="home-banner"/>
       <div className="cards">
         {accomodations &&
           accomodations.map((logement) => (
