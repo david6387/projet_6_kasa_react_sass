@@ -112,22 +112,21 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 505px) {
 
     .accomodation-info {
         flex-direction: column;
         margin: 15px 20px;
-
-        h1 {
-            font-size: 18px;
-        }
-        h2 {
-            font-size: 14px;
-            margin-top: 10px;
-        }
         
         .house-info{
             width: 100%;
+            h1 {
+                font-size: 18px;
+            }
+            h2 {
+                font-size: 14px;
+                margin-top: 10px;
+            }
         }
 
         .host-info {

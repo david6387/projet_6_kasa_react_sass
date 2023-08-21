@@ -49,16 +49,11 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 505px) {
 
     .currentImage {
         display: none;
     }
-}
-
-
-@media (max-width: 375px) {
-
     .carousel {
         height: 255px;
         border-radius: 10px;
