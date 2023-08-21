@@ -19,12 +19,18 @@ export default function Collapse({ title, description }) {
         <img
           src={ArrowCollapse}
           alt="Ouvrir et fermer menu déroulant"
-          className={open ? "rotate" : ""}
+          className={open ? "rotate" : "rotate-back"}
           onClick={collapseSwitch}
         />
       </button>
-      {open && (Array.isArray(description) ? <ul>{description.map((element,index) =>
-      <li key={index}>{element}</li>)}</ul> : <p>{description}</p>)}
+      <div className={`content ${open ? "open" : ""}`}>
+      {Array.isArray(description) ? (
+        <ul>{description.map((element, index) => 
+        <li key={index}>{element}</li>)}</ul>
+      ) : (
+        <p>{description}</p>
+      )}
+    </div>
     </div>
   );
 }
