@@ -1,11 +1,12 @@
 import React from "react";
+import LogoWhite from "../images/logo.white.png"
 
 export default function Footer() {
   return (
     <div className="footer">
       <picture>
         <img
-          src="https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/logo.white.png"
+          src={LogoWhite}
           alt="Logo de Kasa"
         ></img>
       </picture>

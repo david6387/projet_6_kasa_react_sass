@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Tags from "../components/Tags";
 import ImageSlider from "../components/ImageSlider";
 import Collapse from "../components/Collapse";
@@ -9,7 +9,6 @@ import { useAccomodations } from "../contexts/AccomodationContext";
 
 export default function AccomodationInfo() {
   let { pageId } = useParams();
-  const navigate = useNavigate();
   const accomodations = useAccomodations()
   console.log(accomodations);
 

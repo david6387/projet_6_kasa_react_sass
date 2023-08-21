@@ -1,12 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "../images/logo.png"
 
 export default function Header() {
   return (
     <div className="header">
       <picture>
         <img
-          src="https://david6387.github.io/projet_6_kasa_react_sass/my-kasa-app/src/images/logo.png"
+          src={Logo}
           alt="Logo de Kasa"
         ></img>
       </picture>
