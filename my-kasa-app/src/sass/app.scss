@@ -1,16 +1,16 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 @import './utils/variables-fonts.scss';
 // @import './_breakpoints.scss';
-@import './layout/header.scss';
-@import './layout/footer.scss';
-@import './banner.scss';
-@import './cards.scss';
-@import './collapse.scss';
-@import './error.scss';
-@import './page/accomodation.scss';
-@import './carousel.scss';
-@import './rate.scss';
-@import './tags.scss';
+@import './layouts/header.scss';
+@import './layouts/footer.scss';
+@import './components/banner.scss';
+@import './components/cards.scss';
+@import './components/collapse.scss';
+@import './pages/error.scss';
+@import './pages/accomodation.scss';
+@import './components/carousel.scss';
+@import './components/rate.scss';
+@import './components/tags.scss';
 
 
 body {

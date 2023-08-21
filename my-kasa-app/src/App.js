@@ -5,7 +5,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import AccomodationInfo from "./pages/AccomodationInfo.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
-import "./styles/app.scss";
+import "./sass/app.scss";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 
