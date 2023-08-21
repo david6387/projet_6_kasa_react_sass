@@ -23,14 +23,14 @@ export default function Collapse({ title, description }) {
           onClick={collapseSwitch}
         />
       </button>
-      <div className={`content ${open ? "open" : ""}`}>
-      {Array.isArray(description) ? (
-        <ul>{description.map((element, index) => 
-        <li key={index}>{element}</li>)}</ul>
-      ) : (
-        <p>{description}</p>
-      )}
-    </div>
+        <div className={`content ${open ? "open" : ""}`}>
+        {Array.isArray(description) ? (
+          <ul>{description.map((element, index) => 
+          <li key={index}>{element}</li>)}</ul>
+          ) : (
+          <p>{description}</p>
+        )}
+        </div>
     </div>
   );
 }
