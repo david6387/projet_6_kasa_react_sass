@@ -19,7 +19,7 @@ export default function ImageSlider({ slides, alt }) {
 
   return (
     <>
-  <img src={slides[currentPicture]} alt={alt}/>
+  <img className="current-slide" src={slides[currentPicture]} alt={alt}/>
   <div className="overlay">
   {slides.length > 1 && (
     <>

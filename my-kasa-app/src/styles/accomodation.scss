@@ -6,8 +6,9 @@
     position: relative;
     overflow: hidden;
 
-    img {
+    .current-slide {
         object-fit: cover;
+        width: -webkit-fill-available;
     }
 
     .overlay {
