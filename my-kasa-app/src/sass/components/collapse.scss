@@ -66,8 +66,10 @@
 }
 
 @media (max-width: 750px) {
+
     .values-collapse {
         margin: 0 50px;
+
         .collapse {
             width: 100%;
         }
@@ -81,12 +83,15 @@
     .values-collapse {
         margin: 0 20px;
         gap: 20px;
+
         .collapse {
             width: 100%;
+
             button {
                 font-size: 13px;
                 padding: 10px;
             }
+            
             p {
                 font-size: 13px;
             }

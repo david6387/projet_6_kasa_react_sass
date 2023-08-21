@@ -2,6 +2,7 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+
         li {
         background: $red;
         padding: 5px 30px;
@@ -13,9 +14,11 @@
 }
 
 @media (max-width: 505px) {
+
     .tags {
         flex-wrap: wrap;
         margin-top: 15px;
+        
         li {
             font-size: 10px;
             margin: 0;
