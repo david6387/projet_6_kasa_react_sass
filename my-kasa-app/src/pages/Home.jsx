@@ -7,11 +7,10 @@ import { useAccomodations } from "../contexts/AccomodationContext";
 export default function Home() {
 
   const accomodations = useAccomodations()
-  // console.log(accomodations);
 
   return (
     <>
-      <Banner img={BannerHome} title="Chez vous, partout et ailleurs" className="home-banner"/>
+      <Banner className="home-banner" img={BannerHome} title="Chez vous, partout et ailleurs" />
       <div className="cards">
         {accomodations &&
           accomodations.map((logement) => (

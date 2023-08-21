@@ -21,11 +21,7 @@
             z-index: 10;
             line-height: 1.5em;
         }
-        
-        img {
-            cursor: pointer;
-        }
-
+                
         button {
             display: flex;
             align-items: center;
@@ -39,6 +35,10 @@
             font-size: 24px;
             width: 100%;
             z-index: 20;
+            
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
@@ -46,10 +46,12 @@
 .rotate {
     transform: rotate(-180deg);
     transition: all 0.7s ease;
+    transform-origin: center;
 }
 
 .rotate-back {
     transform: rotate(0deg);
+    transform-origin: center;
     transition: all 0.7s ease;
 }
 
@@ -91,7 +93,7 @@
                 font-size: 13px;
                 padding: 10px;
             }
-            
+
             p {
                 font-size: 13px;
             }

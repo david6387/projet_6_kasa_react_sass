@@ -14,13 +14,12 @@ export default function Collapse({ title, description }) {
 
   return (
     <div className="collapse">
-      <button>
+      <button className="collapse-button" onClick={collapseSwitch}>
         <span>{title}</span>
         <img
           src={ArrowCollapse}
           alt="Ouvrir et fermer menu déroulant"
           className={open ? "rotate" : "rotate-back"}
-          onClick={collapseSwitch}
         />
       </button>
         <div className={`content ${open ? "open" : ""}`}>

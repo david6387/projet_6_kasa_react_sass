@@ -4,19 +4,15 @@ import Tags from "../components/Tags";
 import ImageSlider from "../components/ImageSlider";
 import Collapse from "../components/Collapse";
 import Rate from "../components/Rate";
-import ErrorPage from "./ErrorPage";
 import { useAccomodations } from "../contexts/AccomodationContext";
 
 export default function AccomodationInfo() {
   let { pageId } = useParams();
   const accomodations = useAccomodations()
-  console.log(accomodations);
-
-
   const logementData = accomodations.find((logement) => pageId === logement.slug)
     
   if (!logementData) {
-    return <ErrorPage/>
+    window.location.href = "/error"
   }
     
   return (
