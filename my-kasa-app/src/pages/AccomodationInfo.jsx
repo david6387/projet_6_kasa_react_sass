@@ -5,6 +5,7 @@ import ImageSlider from "../components/ImageSlider";
 import Collapse from "../components/Collapse";
 import Rate from "../components/Rate";
 import { useAccomodations } from "../contexts/AccomodationContext";
+import ErrorPage from "./ErrorPage";
 
 export default function AccomodationInfo() {
   let { pageId } = useParams();
@@ -12,7 +13,7 @@ export default function AccomodationInfo() {
   const logementData = accomodations.find((logement) => pageId === logement.slug)
     
   if (!logementData) {
-    window.location.href = "/error"
+    return <ErrorPage/>
   }
     
   return (
