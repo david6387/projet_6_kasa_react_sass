@@ -1,8 +1,6 @@
 .values-collapse {
-    display: flex;
+    @extend %flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 0 100px;
     gap: 30px;
 
@@ -23,9 +21,7 @@
         }
                 
         button {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @extend %flex-between;
             padding: 10px 20px 10px 15px;
             border-radius: 5px;
             background: $red;
