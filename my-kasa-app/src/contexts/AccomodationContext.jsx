@@ -10,7 +10,6 @@ export const AccomodationProvider = ({children}) => {
         fetch("/data/logements.json")
         .then((res)=> {return res.json()})
         .then((datas)=> {
-            console.log(datas);
             datas.forEach((data) => {
                 data.slug = data.title.toLowerCase().replaceAll(" ", "-");
             });
