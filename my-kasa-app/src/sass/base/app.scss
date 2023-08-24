@@ -1,14 +1,13 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 @import '../utils/_variables-fonts.scss';
-@import '../utils/placeholders.scss';
-// @import './_breakpoints.scss';
+@import '../utils/_placeholders.scss';
 @import '../layouts/_header.scss';
 @import '../layouts/_footer.scss';
+@import '../pages/_error.scss';
+@import '../pages/_accomodation.scss';
 @import '../components/_banner.scss';
 @import '../components/_cards.scss';
 @import '../components/_collapse.scss';
-@import '../pages/_error.scss';
-@import '../pages/_accomodation.scss';
 @import '../components/_carousel.scss';
 @import '../components/_rate.scss';
 @import '../components/_tags.scss';
