@@ -5,11 +5,9 @@ const Card = ({ img, title }) => {
     <div className="card">
       <div className="image-container">
         <img src={img} alt={title} />
-        {/* <Link> */}
-        <div className="overlay">
-          <figcaption>{title}</figcaption>
-        </div>
-        {/* </Link> */}
+          <div className="overlay">
+            <figcaption>{title}</figcaption>
+          </div>
       </div>
     </div>
   );
